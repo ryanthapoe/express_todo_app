@@ -31,11 +31,13 @@
 
 [x] Membuat laman form menambah todo
 
-[] Buat hapus route untuk todo -> DELETE
+[x] Buat hapus route untuk todo -> DELETE
 
-[] Membuat tombol hapus pada laman view all untuk menghapus todo
+[x] Membuat tombol hapus pada laman view all untuk menghapus todo
 
-[] Buat edit route untuk todo -> PUT
+[x] Buat edit route untuk todo -> PUT
 
-[] Membuat laman tambah dapat digunakan kembali menjadi laman edit
+[x] Membuat tombol edit pada laman todo untuk edit todo
+
+[x] Membuat laman tambah dapat digunakan kembali menjadi laman edit
 

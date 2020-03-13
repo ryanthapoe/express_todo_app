@@ -1,7 +1,14 @@
 <h3>{{title}} 
     {{#if done_status}}<span class="badge badge-success">Selesai</span>
-    {{else}} <span class="badge badge-danger">Belum Selesai</span>
+    {{else}} <span class="badge badge-primary">Belum Selesai</span>
     {{/if}}
 </h3>
 <p>{{description}}</p>
-<a href="/" class="btn btn-dark">Kembali</a>
+<form action="/{{id}}?_method=DELETE" method="POST">
+    <a href="/" class="btn btn-secondary">Kembali</a>
+    <div class="btn-group float-right" role="group">
+        {{#if done_status}}{{else}}<a href="/approve/{{id}}" class="btn btn-info">Selesaikan</a>{{/if}}
+        <a href="/form/{{id}}" class="btn btn-primary">Edit</a>
+        <button type="submit" class="btn btn-danger">Hapus</button>
+    </div>
+</form>

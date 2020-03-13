@@ -1,14 +1,15 @@
-<form action="/" method="POST">
+<form action="/{{#if method}}{{method}}{{/if}}" method="POST">
   <div class="form-group">
     <label for="title">Judul Todo</label>
-    <input type="text" class="form-control" id="title" name="title">
+    <input type="text" class="form-control" id="title" name="title"{{#if todo.title}} value="{{todo.title}}" {{/if}}>
     {{#if error.title}}
     <small id="titleError" class="form-text text-danger">*{{error.title}}</small>
     {{/if}}
   </div>
   <div class="form-group">
     <label for="description">Description</label>
-    <textarea class="form-control" id="description" name="description"></textarea>
+    <textarea class="form-control" id="description" name="description">{{#if todo.description}}{{todo.description}}{{/if}}</textarea>
   </div>
-  <button type="submit" class="btn btn-info">Submit</button>
+  <a href="/{{#if todo.id}}{{todo.id}}{{/if}}" class="btn btn-secondary">Kembali</a>
+  <button type="submit" class="btn btn-info float-right">Submit</button>
 </form>
