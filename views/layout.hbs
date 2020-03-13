@@ -6,15 +6,13 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">My Todos</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <button class="btn btn-secondary" type="button">+ Todo</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="display:flex; justify-content:space-between;">
+      <div class="container">
+        <a class="navbar-brand" href="/">My Todos</a>
+        <a href="/form" class="btn btn-light float-right">+ Todo</a>
+      </div>
     </nav>
-    <div class="container mt-2">
+    <div class="container mt-1">
       {{{body}}}
     </div>
     
