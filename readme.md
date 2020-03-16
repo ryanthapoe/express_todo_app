@@ -45,3 +45,6 @@
 # To Start the app
 ## npm install
 ## npm start
+
+# Installing the db
+## knex migrate:latest
